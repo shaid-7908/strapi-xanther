@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "xanther_blogs",
+  "info": {
+    "singularName": "xanther-blog",
+    "pluralName": "xanther-blogs",
+    "displayName": "Xanther_Blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "postFormat": {
+      "type": "enumeration",
+      "enum": [
+        "standard",
+        "video"
+      ],
+      "default": "standard"
+    },
+    "date": {
+      "type": "date",
+      "default": "2023-03-27"
+    },
+    "pCate": {
+      "type": "enumeration",
+      "enum": [
+        "Tech Blog"
+      ],
+      "default": "Tech Blog"
+    },
+    "cate": {
+      "type": "enumeration",
+      "enum": [
+        "Leadership"
+      ],
+      "default": "Leadership"
+    },
+    "featureImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "cate_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "post_content": {
+      "type": "richtext",
+      "required": true
+    },
+    "author_name": {
+      "type": "string",
+      "default": "Xanther Services"
+    },
+    "author_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "author_designation": {
+      "type": "string",
+      "default": "Software Service"
+    },
+    "author_bio": {
+      "type": "string",
+      "default": "At 29 years old, my favorite compliment is being told that I look like my mom. Seeing myself in her image, like this daughter up top, makes me so proud of how far I’ve come, and so thankful for where I come from."
+    }
+  }
+}

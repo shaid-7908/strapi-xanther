@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolio_xanthers",
+  "info": {
+    "singularName": "portfolio-xanther",
+    "pluralName": "portfolio-xanthers",
+    "displayName": "portfolio_xanther",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project_name": {
+      "type": "string",
+      "required": true
+    },
+    "project_thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "project_info": {
+      "type": "text"
+    },
+    "project_catagories": {
+      "type": "enumeration",
+      "enum": [
+        "web development",
+        "mobile app development",
+        "web design",
+        "none"
+      ],
+      "required": true,
+      "default": "none"
+    },
+    "project_images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "project_videos": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "project_link": {
+      "type": "string"
+    },
+    "project_cat": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
